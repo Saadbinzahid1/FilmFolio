@@ -8,7 +8,7 @@ It acts as a personal movie portfolio where you can organize and evaluate your f
 
 ## 🌐 Live Preview
 
-<!-- [Live Demo](https://timespizzamenu.netlify.app) -->
+[Live Demo](https://filmfolioreact.netlify.app)
 
 ---
 

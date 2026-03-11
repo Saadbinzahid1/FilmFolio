@@ -13,8 +13,8 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(null);
   const { movies, isLoading, error } = useMovies(query);
+
   const [watched, setWatched] = useLocalStorageState([], "watched");
-  useKey("Escape", onCloseMovie);
 
   function handleSelectMovie(id) {
     setSelectedId((selectedId) => (id === selectedId ? null : id));
@@ -201,6 +201,8 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     onAddWatched(newWatchedMovie);
     onCloseMovie();
   }
+
+  useKey("Escape", onCloseMovie);
 
   useEffect(
     function () {
